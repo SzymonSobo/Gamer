@@ -1,0 +1,78 @@
+.bounce-top {
+    display: block;
+    animation: bounce-top 2s infinite both;
+}
+@keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }   
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+@keyframes maxHeight
+{
+    from {
+        height: 70px;
+    }
+    to {
+        height: 350px;
+    }
+}
+@keyframes minHeight
+{
+    from {
+        height: 350px;
+    }
+    to {
+        height: 70px;
+    }
+}
+@keyframes translateUp
+{
+    from {
+        transform: translateY(-400px);
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+@keyframes translateDown
+{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-400px)
+    }
+}
